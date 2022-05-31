@@ -275,3 +275,35 @@ inicio productos
         }
      
     }
+
+
+/* Productos*/
+
+.containerProductos{
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 1fr;
+    grid-template-rows: 100px 200px 2fr 1fr;
+    grid-template-areas: 
+    " entradaProductos   entradaProductos   entradaProductos   entradaProductos " 
+    " navProductos  navProductos  navProductos  navProductos "
+    " info info  fotos  fotos "
+    " pie  pie  pie  pie "
+    ;
+  
+    grid-gap: 20px; 
+}
+.entradaProductos{
+    grid-area: entradaProductos;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #112B3C;
+    color: #EFEFEF; 
+  
+}   
+.navProductos{
+  
+}
+
+
